@@ -1,0 +1,42 @@
+.download-file {
+    /*position: relative;*/
+    margin: 0px auto;
+    display: block;
+    text-align: center;
+    top: 20px;
+    border-radius: 5px;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.download-file a {
+    text-decoration: none;
+    display: inline-block;
+    border: #CCCCCC 1px solid;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    height: 2em;
+    width: 6em;
+    color: #444549;
+    line-height: 2em;
+    transition: 1s;
+}
+
+.download-file a:hover {
+    background-color: #CCCCCC;
+}
+
+@media (max-width: 400px) {
+    .download-file a:active {
+        background-color: #cccccc;
+        transition: 1s;
+    }
+    .download-file a:visited {
+        background-color: #FFFFFF;
+        transition: 1s;
+    }
+}
+
+#wrapper-A3 {
+    text-align: center;
+}
