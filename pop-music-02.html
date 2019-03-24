@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>流行音乐赏析</title>
+
+    <!-- Behavioral Meta Data -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="郑燕梅 流行音乐赏析 浙江理工大学">
+    <meta name="author" content="ywang_perfect@163.com">
+    <link rel="icon" type="image/png" href="IMG/small-logo-01.png" />
+    <link href="CSS/spore-font.css" rel="stylesheet" />
+    <link href="CSS/animate.css" rel="stylesheet" />
+    <link href="CSS/spore-animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/music-content.css" type="text/css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/APlayer.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/basic.css" />
+    <style>
+        .container-fluid {
+            margin-top: 20px;
+        }
+        
+        .wrapper-vid {
+            width: 350px;
+            height: 110px;
+            margin: 20px auto;
+            border-radius: 5px;
+            background: #FBFBFB;
+            text-align: center;
+            padding-top: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12)
+        }
+        
+        .wrapper-vid h5 span {
+            font-size: 12px;
+        }
+        
+        @media (max-width: 400px) {
+            .mus-player {
+                width: 300px;
+            }
+            .wrapper-vid {
+                width: 290px;
+            }
+            .wrapper-vid video {
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENU TAB -->
+    <div id="main-wrapper-menu">
+        <div id="wrapper-cross"></div>
+        <div id="wrapper-menu">
+
+            <div class="recent-post text-part-menutab">
+                <ul>
+                    <li>
+                        <div id="recent-post-title">Our recent post</div>
+                    </li>
+                    <li>
+                        <div id="recent-post-1"><a href="spore-post1.html">Post a youtube video</a></div>
+                    </li>
+                    <li>
+                        <div id="recent-post-2"><a href="spore-post2.html">Post an animated image</a></div>
+                    </li>
+                    <li>
+                        <div id="recent-post-3"><a href="spore-post5.html">Post featured image</a></div>
+                    </li>
+                    <li>
+                        <div id="recent-post-4"><a href="spore-post3.html">Auto-resized image</a></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="category-post text-part-menutab">
+                <div id="line-category-post"></div>
+                <ul>
+                    <li>
+                        <div id="category-post-title">Categories post</div>
+                    </li>
+                    <li>
+                        <div id="category-post-1"><a href="spore-cat-video.html">Video articles</a></div>
+                    </li>
+                    <li>
+                        <div id="category-post-2"><a href="spore-cat-hotpost.html">Hot articles</a></div>
+                    </li>
+                    <li>
+                        <div id="category-post-3"><a href="spore-cat-image.html">Images</a></div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- BOUTON MENU TAB -->
+    <!--
+<div id="wrapper-plus" class="object"></div>
+-->
+    <!-- HEADER -->
+
+    <div id="A1-main">
+
+        <div id="wrapper-logo">
+            <a href="index.html">
+                <div id="logo" class="shadow object"></div>
+            </a>
+        </div>
+
+        <div id="A1">
+
+            <div class="blank"></div>
+            <div id="A0"></div>
+            <div id="A0-2"></div>
+            <div id="trame"></div>
+
+        </div>
+
+    </div>
+
+    <div >
+        <div id="content-wrapper" class="container-fluid">
+
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                        <h3 class="panel-title text-center"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> 彩虹合唱团</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                            <div class="col-md-6">
+                                    <div class="wrapper-vid">
+                                        <h5>孤独是种病<span> - 彩虹合唱团</span></h5>
+                                        <video width="350" height="80" controls id="myVideo1">
+                                                <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E5%BD%A9%E8%99%B9%E5%90%88%E5%94%B1%E5%9B%A2/%E3%80%8A%E5%AD%A4%E7%8B%AC%E6%98%AF%E7%A7%8D%E7%97%85%E3%80%8B%E4%B8%8A%E6%B5%B7%E5%BD%A9%E8%99%B9%E5%90%88%E5%94%B1%E5%9B%A2-_%E9%AB%98%E6%B8%85.mp4" type="video/mp4">
+                                                            您的浏览器无法播放此视频，请在底部下载文件。
+                                        </video>
+                                    </div>
+                            </div>
+                            <div class="col-md-6">
+                                    <div class="wrapper-vid">
+                                        <h5>春节自救指南<span> - 彩虹合唱团</span></h5>
+                                        <video width="350" height="80" controls id="myVideo2">
+                                                <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E5%BD%A9%E8%99%B9%E5%90%88%E5%94%B1%E5%9B%A2/%E5%BD%A9%E8%99%B9%E5%90%88%E5%94%B1%E5%9B%A2%E8%A1%A8%E6%BC%94%E7%9A%84%E3%80%8A%E6%98%A5%E8%8A%82%E8%87%AA%E6%95%91%E6%8C%87%E5%8D%97%E3%80%8B%2C%20%E8%BF%99%E4%B8%80%E6%AE%B5%E7%9C%9F%E7%9A%84%E5%A4%AA%E7%BB%8F%E5%85%B8%E4%BA%86-_%E9%AB%98%E6%B8%85.mp4" type="video/mp4">
+                                                            您的浏览器无法播放此视频，请在底部下载文件。
+                                        </video>
+                                    </div>
+                            </div>
+                            <div class="col-md-6">
+                                    <div class="wrapper-vid">
+                                        <h5>张士超你昨天晚上到底把我家钥匙放在哪里了<span> - 彩虹合唱团</span></h5>
+                                        <video width="350" height="80" controls id="myVideo3">
+                                                <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E5%BD%A9%E8%99%B9%E5%90%88%E5%94%B1%E5%9B%A2/%E5%B9%B4%E5%BA%A6%E7%A5%9E%E6%9B%B2%EF%BC%81%E4%B8%8A%E6%B5%B7%E5%BD%A9%E8%99%B9%E5%AE%A4%E5%86%85%E5%90%88%E5%94%B1%E5%9B%A2%E3%80%8A%E5%BC%A0%E5%A3%AB%E8%B6%85%E4%BD%A0%E6%98%A8%E5%A4%A9%E6%99%9A%E4%B8%8A%E5%88%B0%E5%BA%95%E6%8A%8A%E6%88%91%E5%AE%B6%E9%92%A5%E5%8C%99%E6%94%BE%E5%9C%A8%E5%93%AA%E9%87%8C%E4%BA%86%E3%80%8B%EF%BC%9F-_%E9%AB%98%E6%B8%85%282%29.mp4" type="video/mp4">
+                                                            您的浏览器无法播放此视频，请在底部下载文件。
+                                        </video>
+                                    </div>
+                            </div>
+                            <div class="col-md-6">
+                                    <div class="wrapper-vid">
+                                        <h5>我喜欢<span> - 彩虹合唱团</span></h5>
+                                        <video width="350" height="80" controls id="myVideo4">
+                                                <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E5%BD%A9%E8%99%B9%E5%90%88%E5%94%B1%E5%9B%A2/%E4%B8%8A%E6%B5%B7%E5%BD%A9%E8%99%B9%E5%90%88%E5%94%B1%E5%9B%A2%E7%9A%84%E3%80%8A%E6%88%91%E5%96%9C%E6%AC%A2%E3%80%8B%2C%20%E5%8F%AF%E4%BB%A5%E8%AF%B4%E6%98%AF%E8%A1%A8%E7%99%BD%E5%88%A9%E5%99%A8%E4%BA%86%2C%20%E5%85%85%E6%BB%A1%E9%9D%92%E6%98%A5%E6%84%9F%E7%9A%84%E7%94%9F%E6%B4%BB%E7%94%BB%E9%9D%A2-_%E9%AB%98%E6%B8%85.mp4" type="video/mp4">
+                                                            您的浏览器无法播放此视频，请在底部下载文件。
+                                        </video>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="panel panel-success">
+                    <div class="panel-heading">
+                            <h3 class="panel-title text-center"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> 今宵多珍重</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                    <div class="wrapper-vid">
+                                            <h5>今宵多珍重<span> - 陈百强</span></h5>
+                                            <video width="350" height="80" controls id="myVideo4">
+                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E4%BB%8A%E5%AE%B5%E5%A4%9A%E7%8F%8D%E9%87%8D/%E7%BB%8F%E5%85%B8%E8%80%81%E6%AD%8C%20%E9%99%88%E7%99%BE%E5%BC%BA%20-%20%E4%BB%8A%E5%AE%B5%E5%A4%9A%E7%8F%8D%E9%87%8D%5B%E8%B6%85%E6%B8%85%E7%89%88%5D-_%E9%AB%98%E6%B8%85.mp4" type="video/mp4">
+                                                                您的浏览器无法播放此视频，请在底部下载文件。
+                                            </video>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+
+            <div class="panel panel-success">
+                    <div class="panel-heading">
+                            <h3 class="panel-title text-center"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> 罗拉费琪《秋叶》</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="wrapper-vid">
+                                        <h5>Historia De Un Amor<span> - Laura Fygi</span></h5>
+                                        <video width="350" height="80" controls id="myVideo4">
+                                                <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E7%BD%97%E6%8B%89%E8%B4%B9%E7%90%AA%E3%80%8A%E7%A7%8B%E5%8F%B6%E3%80%8B/Laura%20Fygi%20-%20Historia%20De%20Un%20Amor-_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                            您的浏览器无法播放此视频，请在底部下载文件。
+                                        </video>
+                                </div>
+                                    
+                            </div>
+                            <div class="col-md-6">
+                                    <div class="wrapper-vid">
+                                            <h5>Les feuilles mortes 秋叶 枯叶 Autumn Leaves<span> - Laura Fygi</span></h5>
+                                            <video width="350" height="80" controls id="myVideo4">
+                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E7%BD%97%E6%8B%89%E8%B4%B9%E7%90%AA%E3%80%8A%E7%A7%8B%E5%8F%B6%E3%80%8B/Laura%20Fygi%20Les%20feuilles%20mortes%20%E7%A7%8B%E5%8F%B6%20%E6%9E%AF%E5%8F%B6%20Autumn%20Leaves-_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                                您的浏览器无法播放此视频，请在底部下载文件。
+                                            </video>
+                                    </div>
+                                    
+                            </div>
+                            <div class="col-md-6">
+                                    <div class="wrapper-vid">
+                                            <h5>Les Feuilles Mortes<span> - Yves Montand 伊夫·蒙坦</span></h5>
+                                            <video width="350" height="80" controls id="myVideo4">
+                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E7%BD%97%E6%8B%89%E8%B4%B9%E7%90%AA%E3%80%8A%E7%A7%8B%E5%8F%B6%E3%80%8B/Les%20Feuilles%20Mortes%20%E6%9E%AF%E5%8F%B6--Yves%20Montand%20%E4%BC%8A%E5%A4%AB%C2%B7%E8%92%99%E5%9D%A6-_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                                您的浏览器无法播放此视频，请在底部下载文件。
+                                            </video>
+                                    </div>
+                                    
+                            </div>
+                            <div class="col-md-6">
+                                    <div class="wrapper-vid">
+                                            <h5>Les Feuilles Mortes<span> - Yves Montand à l´Olympia</span></h5>
+                                            <video width="350" height="80" controls id="myVideo4">
+                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E7%BD%97%E6%8B%89%E8%B4%B9%E7%90%AA%E3%80%8A%E7%A7%8B%E5%8F%B6%E3%80%8B/Les%20Feuilles%20Mortes_Yves%20Montand%20%C3%A0%20l%C2%B4Olympia-_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                                您的浏览器无法播放此视频，请在底部下载文件。
+                                            </video>
+                                    </div>
+                                    
+                            </div>
+                            <div class="col-md-6">
+                                    <div class="wrapper-vid">
+                                            <h5>Les Feuilles Mortes Yves Montand<span> - 法国香颂</span></h5>
+                                            <video width="350" height="80" controls>
+                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E7%BD%97%E6%8B%89%E8%B4%B9%E7%90%AA%E3%80%8A%E7%A7%8B%E5%8F%B6%E3%80%8B/%E6%B3%95%E5%9B%BD%E9%A6%99%E9%A2%82%20%E6%9E%AF%E5%8F%B6%EF%BC%88%E8%90%BD%E5%8F%B6%EF%BC%89Les%20Feuilles%20Mortes%20Yves%20Montand-_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                                您的浏览器无法播放此视频，请在底部下载文件。
+                                            </video>
+                                    </div>
+                                    
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+                <div class="panel panel-success">
+                        <div class="panel-heading">
+                                <h3 class="panel-title text-center"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> 南屏晚钟</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                        <div class="wrapper-vid">
+                                                <h5>南屏晚钟<span> - 徐小凤</span></h5>
+                                                <video width="350" height="80" controls>
+                                                        <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E5%8D%97%E5%B1%8F%E6%99%9A%E9%92%9F/2011%E5%BE%90%E5%B0%8F%E5%87%A4%E4%B8%8A%E6%B5%B7%E6%BC%94%E5%94%B1%E4%BC%9A%20%E5%8D%97%E5%B1%8F%E6%99%9A%E9%92%9F-_%E9%AB%98%E6%B8%85.mp4" type="video/mp4">
+                                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                                </video>
+                                        </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                        <div class="wrapper-vid">
+                                                <h5>南屏晚钟<span> - 费玉清</span></h5>
+                                                <video width="350" height="80" controls>
+                                                        <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E5%8D%97%E5%B1%8F%E6%99%9A%E9%92%9F/%E8%B4%B9%E7%8E%89%E6%B8%85%E6%AD%8C%E6%9B%B2%E3%80%8A%E5%8D%97%E5%B1%8F%E6%99%9A%E9%92%9F%E3%80%8B-_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                                </video>
+                                        </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                        <div class="wrapper-vid">
+                                                <h5>南屏晚钟<span> - 上海彩虹合唱团</span></h5>
+                                                <video width="350" height="80" controls>
+                                                        <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E5%8D%97%E5%B1%8F%E6%99%9A%E9%92%9F/%E4%B8%8A%E6%B5%B7%E5%BD%A9%E8%99%B9%E5%AE%A4%E5%86%85%E5%90%88%E5%94%B1%E5%9B%A2%E3%80%8A%E5%8D%97%E5%B1%8F%E6%99%9A%E9%92%9F%E3%80%8B%20%E6%A0%87%E6%B8%85%28270P%29.MP4" type="video/mp4">
+                                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                                </video>
+                                        </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                        <div class="wrapper-vid">
+                                                <h5>南屏晚钟<span> - 蔡琴</span></h5>
+                                                <video width="350" height="80" controls>
+                                                        <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E5%8D%97%E5%B1%8F%E6%99%9A%E9%92%9F/%E6%AD%8C%E6%9B%B2%E3%80%8A%E5%8D%97%E5%B1%8F%E6%99%9A%E9%92%9F%E3%80%8B%20%E6%BC%94%E5%94%B1%20%E8%94%A1%E7%90%B4-_%E9%AB%98%E6%B8%85.mp4" type="video/mp4">
+                                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                                </video>
+                                        </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                        <div class="wrapper-vid">
+                                                <h5>南屏晚钟<span> - 华晨宇和苏诗丁合唱</span></h5>
+                                                <video width="350" height="80" controls>
+                                                        <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E5%8D%97%E5%B1%8F%E6%99%9A%E9%92%9F/%E5%8D%8E%E6%99%A8%E5%AE%87%E5%92%8C%E8%8B%8F%E8%AF%97%E4%B8%81%E5%90%88%E5%94%B1%E7%9A%84%E3%80%8A%E5%8D%97%E5%B1%8F%E6%99%9A%E9%92%9F%E3%80%8B%2C%20%E4%BB%8E%E6%9D%A5%E6%B2%A1%E6%9C%89%E8%BF%87%E7%9A%84%E9%9C%87%E6%92%BC-_%E9%AB%98%E6%B8%85.mp4" type="video/mp4">
+                                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                                </video>
+                                        </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                        <div class="wrapper-vid">
+                                                <h5>南屏晚钟<span> - 崔萍</span></h5>
+                                                <video width="350" height="80" controls>
+                                                        <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E5%8D%97%E5%B1%8F%E6%99%9A%E9%92%9F/%E5%8D%97%E5%B1%8F%E6%99%9A%E9%92%9F%EF%BD%9E%E5%B4%94%E8%90%8D%28KTV%E7%89%88%EF%BC%9A%E6%B8%AF%E6%BE%B3%E5%8F%B0%29-_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                                </video>
+                                        </div>
+                                </div>
+
+                            </div>
+                        </div>
+                </div>
+    
+                <div class="panel panel-success">
+                        <div class="panel-heading">
+                                <h3 class="panel-title text-center"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> 情人的眼泪</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                        <div class="wrapper-vid">
+                                                <h5>情人的眼泪<span> - 黄龄</span></h5>
+                                                <video width="350" height="80" controls>
+                                                        <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E6%83%85%E4%BA%BA%E7%9A%84%E7%9C%BC%E6%B3%AA/%E9%BB%84%E9%BE%84%E3%80%8A%E6%83%85%E4%BA%BA%E7%9A%84%E7%9C%BC%E6%B3%AA%E3%80%8B%20150705%20%E8%B6%85%E7%BA%A7%E6%AD%8C%E5%8D%95-_%E9%AB%98%E6%B8%85.mp4" type="video/mp4">
+                                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                                </video>
+                                        </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                        <div class="wrapper-vid">
+                                                <h5>情人的眼泪<span> - 潘秀琼</span></h5>
+                                                <video width="350" height="80" controls>
+                                                        <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E6%83%85%E4%BA%BA%E7%9A%84%E7%9C%BC%E6%B3%AA/%E6%BD%98%E7%A7%80%E7%90%BC%E3%80%8A%E6%83%85%E4%BA%BA%E7%9A%84%E7%9C%BC%E6%B3%AA%E3%80%8B%E9%A6%99%E6%B8%AF%E7%94%B5%E5%8F%B0%E9%87%91%E6%9B%B2%E6%83%85%E6%80%80%E6%BC%94%E5%94%B1%E4%BC%9A%201991-_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                                </video>
+                                        </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                        <div class="wrapper-vid">
+                                                <h5>情人的眼泪<span> - 姚苏蓉</span></h5>
+                                                <video width="350" height="80" controls>
+                                                        <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E6%83%85%E4%BA%BA%E7%9A%84%E7%9C%BC%E6%B3%AA/%E5%A7%9A%E8%8B%8F%E8%93%89_%E6%83%85%E4%BA%BA%E7%9A%84%E7%9C%BC%E6%B3%AA-%28%E5%9B%BD%29_%E6%A0%87%E6%B8%85-_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                                </video>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-success">
+                            <div class="panel-heading">
+                                    <h3 class="panel-title text-center"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> 深深的吻</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                            <div class="wrapper-vid">
+                                                    <h5>深深的吻<span> - 多明戈</span></h5>
+                                                    <video width="350" height="80" controls>
+                                                            <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E6%B7%B1%E6%B7%B1%E7%9A%84%E5%90%BB/%E5%A4%9A%E6%98%8E%E6%88%88%20%E8%8B%B1%E6%96%87%E6%BC%94%E5%94%B1%20%E6%B7%B1%E6%83%85%E7%9A%84%E5%90%BB%20%E3%80%8ABesame%20mucho%E3%80%8B-_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                                        您的浏览器无法播放此视频，请在底部下载文件。
+                                                    </video>
+                                            </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                            <div class="wrapper-vid">
+                                                    <h5>深深的吻<span> - CARisMA</span></h5>
+                                                    <video width="350" height="80" controls>
+                                                            <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E6%B7%B1%E6%B7%B1%E7%9A%84%E5%90%BB/%E5%A2%A8%E8%A5%BF%E5%93%A5%E8%80%81%E6%AD%8C%E3%80%8A%E6%B7%B1%E6%B7%B1%E7%9A%84%E5%90%BB%E3%80%8BBesame%20Mucho%20-%20CARisMA-_%E9%AB%98%E6%B8%85.mp4" type="video/mp4">
+                                                                        您的浏览器无法播放此视频，请在底部下载文件。
+                                                    </video>
+                                            </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                            <div class="wrapper-vid">
+                                                    <h5>深深的吻<span> - 王晰</span></h5>
+                                                    <video width="350" height="80" controls>
+                                                            <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E6%B7%B1%E6%B7%B1%E7%9A%84%E5%90%BB/%E7%8E%8B%E6%99%B0%E6%9B%BE%E5%8F%82%E5%8A%A0%E3%80%8A%E6%AD%8C%E6%89%8B%E3%80%8B%E4%B8%80%E6%9B%B2%E3%80%8ABesame%20Mucho%E3%80%8B%E8%AE%A9%E5%85%A8%E5%9C%BA%E4%BA%BA%E4%B8%BA%E6%AD%A2%E6%83%8A%E5%8F%B9-_%E9%AB%98%E6%B8%85.mp4" type="video/mp4">
+                                                                        您的浏览器无法播放此视频，请在底部下载文件。
+                                                    </video>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel panel-success">
+                                <div class="panel-heading">
+                                        <h3 class="panel-title text-center"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> 我的心里只有你没有他</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                       
+                                                <div class="col-md-6">
+                                                        <div class="wrapper-vid">
+                                                                <h5>我的心里只有你没有他<span> - 李宇春</span></h5>
+                                                                <video width="350" height="80" controls>
+                                                                        <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E6%88%91%E7%9A%84%E5%BF%83%E9%87%8C%E5%8F%AA%E6%9C%89%E4%BD%A0%E6%B2%A1%E6%9C%89%E4%BB%96/%E8%B6%85%E7%BA%A7%E5%A5%B3%E5%A3%B0%E5%9B%9E%E9%A1%BE%EF%BC%9A%E6%9D%8E%E5%AE%87%E6%98%A5%E3%80%8A%E6%88%91%E7%9A%84%E5%BF%83%E9%87%8C%E5%8F%AA%E6%9C%89%E4%BD%A0%E6%B2%A1%E6%9C%89%E4%BB%96%E3%80%8B%E3%80%90%E9%AB%98%E6%B8%85%E3%80%91.mp4" type="video/mp4">
+                                                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                                                </video>
+                                                        </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                        <div class="wrapper-vid">
+                                                                <h5>我的心里只有你没有他<span> - 小野丽莎</span></h5>
+                                                                <video width="350" height="80" controls>
+                                                                        <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E6%88%91%E7%9A%84%E5%BF%83%E9%87%8C%E5%8F%AA%E6%9C%89%E4%BD%A0%E6%B2%A1%E6%9C%89%E4%BB%96/%E3%80%90%E5%B0%8F%E9%87%8E%E4%B8%BD%E8%8E%8E%E3%80%91%20Historia%20de%20un%20Amor%E6%88%91%E7%9A%84%E5%BF%83%E9%87%8C%E6%B2%A1%E6%9C%89%E4%BB%96%282%29.mp4" type="video/mp4">
+                                                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                                                </video>
+                                                        </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                        <div class="wrapper-vid">
+                                                                <h5>我的心里只有你没有他<span> - 静婷</span></h5>
+                                                                <video width="350" height="80" controls>
+                                                                        <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E6%88%91%E7%9A%84%E5%BF%83%E9%87%8C%E5%8F%AA%E6%9C%89%E4%BD%A0%E6%B2%A1%E6%9C%89%E4%BB%96/%E9%9D%99%E5%A9%B7%E3%80%8A%E6%88%91%E7%9A%84%E5%BF%83%E9%87%8C%E5%8F%AA%E6%9C%89%E4%BD%A0%E6%B2%A1%E6%9C%89%E4%BB%96%E3%80%8B-_%E9%AB%98%E6%B8%85.mp4" type="video/mp4">
+                                                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                                                </video>
+                                                        </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                        <div class="wrapper-vid">
+                                                                <h5>我的心里只有你没有他<span> - 张国荣</span></h5>
+                                                                <video width="350" height="80" controls>
+                                                                        <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E6%88%91%E7%9A%84%E5%BF%83%E9%87%8C%E5%8F%AA%E6%9C%89%E4%BD%A0%E6%B2%A1%E6%9C%89%E4%BB%96/%E5%BC%A0%E5%9B%BD%E8%8D%A3-%E3%80%8A%E6%88%91%E7%9A%84%E5%BF%83%E9%87%8C%E5%8F%AA%E6%9C%89%E4%BD%A0%E6%B2%A1%E6%9C%89%E4%BB%96%E3%80%8B%E7%83%AD%E6%83%85%E6%BC%94%E5%94%B1%E4%BC%9A%E7%89%88-_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                                                </video>
+                                                        </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                        <div class="mus-player">
+                            
+                                                            <div id="player1" class="aplayer">
+                                                                <pre class="aplayer-lrc-content">
+                                                                        [00:00.41]Do... Ha OOH...
+                                                                        
+                                                                                                    </pre>
+                                                            </div>
+                            
+                            
+                            
+                                                            <script src="JS/APlayer.min.js"></script>
+                                                            <script>
+                                                                var ap3 = new APlayer({
+                                                                    element: document.getElementById('player1'), //样式1
+                                                                    narrow: false,
+                                                                    autoplay: false,
+                                                                    showlrc: true,
+                                                                    music: {
+                                                                        title: '我的心里只有你没有他',
+                                                                        author: 'Pariza-Litip',
+                                                                        url: 'http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E6%88%91%E7%9A%84%E5%BF%83%E9%87%8C%E5%8F%AA%E6%9C%89%E4%BD%A0%E6%B2%A1%E6%9C%89%E4%BB%96/%E3%80%90%E6%88%91%E7%9A%84%E5%BF%83%E9%87%8C%E5%8F%AA%E6%9C%89%E4%BD%A0%E6%B2%A1%E6%9C%89%E4%BB%96%20-%20%E8%A5%BF%E7%8F%AD%E7%89%99%E7%89%88%E6%9C%AC%E3%80%91%20-%20%E6%AD%8C%E6%89%8BPariza-Litip.mp3',
+                                                                        pic: 'IMG/cover.jpg'
+                                                                    }
+                                                                });
+                                                                ap3.init();
+                                                            </script>
+                                                        </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                        <div class="mus-player">
+                            
+                                                            <div id="player2" class="aplayer">
+                                                                <pre class="aplayer-lrc-content">
+                                                                        [00:00.41]Do... Ha OOH...
+                                                                        
+                                                                                                    </pre>
+                                                            </div>
+                            
+                            
+                            
+                                                            <script src="JS/APlayer.min.js"></script>
+                                                            <script>
+                                                                var ap3 = new APlayer({
+                                                                    element: document.getElementById('player2'), //样式1
+                                                                    narrow: false,
+                                                                    autoplay: false,
+                                                                    showlrc: true,
+                                                                    music: {
+                                                                        title: 'Historia De Un Amor',
+                                                                        author: 'Pérez Prado',
+                                                                        url: 'http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E6%88%91%E7%9A%84%E5%BF%83%E9%87%8C%E5%8F%AA%E6%9C%89%E4%BD%A0%E6%B2%A1%E6%9C%89%E4%BB%96/Historia%20De%20Un%20Amor%20-%20%20P%C3%A9rez%20Prado.mp3',
+                                                                        pic: 'IMG/cover.jpg'
+                                                                    }
+                                                                });
+                                                                ap3.init();
+                                                            </script>
+                                                        </div>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                        <div class="mus-player">
+                            
+                                                            <div id="player3" class="aplayer">
+                                                                <pre class="aplayer-lrc-content">
+                                                                        [00:00.41]Do... Ha OOH...
+                                                                        
+                                                                                                    </pre>
+                                                            </div>
+                            
+                            
+                            
+                                                            <script src="JS/APlayer.min.js"></script>
+                                                            <script>
+                                                                var ap3 = new APlayer({
+                                                                    element: document.getElementById('player3'), //样式1
+                                                                    narrow: false,
+                                                                    autoplay: false,
+                                                                    showlrc: true,
+                                                                    music: {
+                                                                        title: '我的心里只有你没有他 (Live)',
+                                                                        author: '阿云嘎',
+                                                                        url: 'http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E6%88%91%E7%9A%84%E5%BF%83%E9%87%8C%E5%8F%AA%E6%9C%89%E4%BD%A0%E6%B2%A1%E6%9C%89%E4%BB%96/%E6%88%91%E7%9A%84%E5%BF%83%E9%87%8C%E5%8F%AA%E6%9C%89%E4%BD%A0%E6%B2%A1%E6%9C%89%E4%BB%96%20%28Live%29%20-%20%E9%98%BF%E4%BA%91%E5%98%8E.mp3',
+                                                                        pic: 'IMG/cover.jpg'
+                                                                    }
+                                                                });
+                                                                ap3.init();
+                                                            </script>
+                                                        </div>
+                                                </div>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel panel-success">
+                                    <div class="panel-heading">
+                                            <h3 class="panel-title text-center"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> 徐小凤</h3>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                    <div class="wrapper-vid">
+                                                            <h5>顺流逆流<span> - 徐小凤</span></h5>
+                                                            <video width="350" height="80" controls>
+                                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E5%BE%90%E5%B0%8F%E5%87%A4/85%E5%B9%B4%E5%BE%90%E5%B0%8F%E5%87%A4%E7%8E%B0%E5%9C%BA%E6%BC%94%E5%94%B1%E3%80%8A%E9%A1%BA%E6%B5%81%E9%80%86%E6%B5%81%E3%80%8B%2C%20%E8%BF%99%E6%A0%B7%E7%BB%8F%E5%85%B8%E7%9A%84%E5%97%93%E9%9F%B3%E4%B8%87%E4%B8%AD%E9%9A%BE%E6%B1%82%21-_%E9%AB%98%E6%B8%85.mp4" type="video/mp4">
+                                                                                您的浏览器无法播放此视频，请在底部下载文件。
+                                                            </video>
+                                                    </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                    <div class="wrapper-vid">
+                                                            <h5>心恋<span> - 徐小凤 费玉清</span></h5>
+                                                            <video width="350" height="80" controls>
+                                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E5%BE%90%E5%B0%8F%E5%87%A4/%E5%BE%90%E5%B0%8F%E5%87%A4%20%E8%B4%B9%E7%8E%89%E6%B8%85%20-%20%E5%BF%83%E6%81%8B%20%28%E6%BC%94%E5%94%B1%E4%BC%9A%29-_%E9%AB%98%E6%B8%85.mp4" type="video/mp4">
+                                                                                您的浏览器无法播放此视频，请在底部下载文件。
+                                                            </video>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="panel panel-success">
+                                        <div class="panel-heading">
+                                                <h3 class="panel-title text-center"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> 一见你就笑</h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                        <div class="wrapper-vid">
+                                                                <h5>一见你就笑<span> - 邓丽君</span></h5>
+                                                                <video width="350" height="80" controls>
+                                                                        <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E4%B8%80%E8%A7%81%E4%BD%A0%E5%B0%B1%E7%AC%91/%E9%82%93%E4%B8%BD%E5%90%9B1968%E5%B9%B4%E5%87%BA%E9%81%93%E6%97%B6%E6%88%90%E5%90%8D%E6%9B%B2-%E6%88%91%20%E4%B8%80%E8%A7%81%E4%BD%A0%E5%B0%B1%E7%AC%91-_%E9%AB%98%E6%B8%85.mp4" type="video/mp4">
+                                                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                                                </video>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="panel panel-success">
+                                            <div class="panel-heading">
+                                                    <h3 class="panel-title text-center"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> 伊迪丝·琵雅芙《玫瑰人生》</h3>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                            <div class="wrapper-vid">
+                                                                    <h5>La vie en rose (玫瑰人生)<span> - Edith Piaf (伊迪丝·琵雅芙)</span></h5>
+                                                                    <video width="350" height="80" controls>
+                                                                            <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E4%BC%8A%E8%BF%AA%E4%B8%9D%C2%B7%E7%90%B5%E9%9B%85%E8%8A%99%E3%80%8A%E7%8E%AB%E7%91%B0%E4%BA%BA%E7%94%9F%E3%80%8B/Edith%20Piaf%20%28%E4%BC%8A%E8%BF%AA%E4%B8%9D%C2%B7%E7%90%B5%E9%9B%85%E8%8A%99%29%20-%20La%20vie%20en%20rose%20%28%E7%8E%AB%E7%91%B0%E4%BA%BA%E7%94%9F%29-%E5%9B%BD%E8%AF%AD%E9%AB%98%E6%B8%85%282%29.mp4" type="video/mp4">
+                                                                                        您的浏览器无法播放此视频，请在底部下载文件。
+                                                                    </video>
+                                                            </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                            <div class="wrapper-vid">
+                                                                    <h5>La vie en rose (玫瑰人生)<span> - Edith Piaf (伊迪丝·琵雅芙)</span></h5>
+                                                                    <video width="350" height="80" controls>
+                                                                            <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E4%BC%8A%E8%BF%AA%E4%B8%9D%C2%B7%E7%90%B5%E9%9B%85%E8%8A%99%E3%80%8A%E7%8E%AB%E7%91%B0%E4%BA%BA%E7%94%9F%E3%80%8B/Edith%20Piaf%20-%20L%EF%BC%87Hymne%20%C3%A0%20l%EF%BC%87amour-%E5%9B%BD%E8%AF%AD%E6%B5%81%E7%95%85.mp4" type="video/mp4">
+                                                                                        您的浏览器无法播放此视频，请在底部下载文件。
+                                                                    </video>
+                                                            </div>
+                                                    </div>
+
+                                                    <div class="col-md-6">
+                                                            <div class="wrapper-vid">
+                                                                    <h5>La vie en rose (玫瑰人生)<span> - Andrea Bocelli ft. Sıla</span></h5>
+                                                                    <video width="350" height="80" controls>
+                                                                            <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E4%BC%8A%E8%BF%AA%E4%B8%9D%C2%B7%E7%90%B5%E9%9B%85%E8%8A%99%E3%80%8A%E7%8E%AB%E7%91%B0%E4%BA%BA%E7%94%9F%E3%80%8B/%E3%80%8A%E7%8E%AB%E7%91%B0-%20La%20Vie%20En%20Rose%E3%80%8BAndrea%20Bocelli%20ft.%20S%C4%B1la-_%E9%AB%98%E6%B8%85.mp4" type="video/mp4">
+                                                                                        您的浏览器无法播放此视频，请在底部下载文件。
+                                                                    </video>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title text-center"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> 音乐背景：披头士和猫王</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                    <div class="wrapper-vid">
+                                            <h5>Please Please Me<span> - Beatles</span></h5>
+                                            <video width="350" height="80" controls>
+                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E9%9F%B3%E4%B9%90%E8%83%8C%E6%99%AF%EF%BC%9A%E6%8A%AB%E5%A4%B4%E5%A3%AB%E5%92%8C%E7%8C%AB%E7%8E%8B/Beatles%20-%20Please%20Please%20Me-_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                                您的浏览器无法播放此视频，请在底部下载文件。
+                                            </video>
+                                    </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                    <div class="wrapper-vid">
+                                            <h5>Love Me Tender 现场版<span> - Elvis Presley</span></h5>
+                                            <video width="350" height="80" controls>
+                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E9%9F%B3%E4%B9%90%E8%83%8C%E6%99%AF%EF%BC%9A%E6%8A%AB%E5%A4%B4%E5%A3%AB%E5%92%8C%E7%8C%AB%E7%8E%8B/Love%20Me%20Tender%20%E7%8E%B0%E5%9C%BA%E7%89%88-Elvis%20Presley-_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                                您的浏览器无法播放此视频，请在底部下载文件。
+                                            </video>
+                                    </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                    <div class="wrapper-vid">
+                                            <h5>That＇s All Right<span> - Elvis Presley</span></h5>
+                                            <video width="350" height="80" controls>
+                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E9%9F%B3%E4%B9%90%E8%83%8C%E6%99%AF%EF%BC%9A%E6%8A%AB%E5%A4%B4%E5%A3%AB%E5%92%8C%E7%8C%AB%E7%8E%8B/That%EF%BC%87s%20All%20Right-Elvis%20Presley-_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                                您的浏览器无法播放此视频，请在底部下载文件。
+                                            </video>
+                                    </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                    <div class="wrapper-vid">
+                                            <h5>Love.Me.Do<span> - 甲壳虫Beatles</span></h5>
+                                            <video width="350" height="80" controls>
+                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E9%9F%B3%E4%B9%90%E8%83%8C%E6%99%AF%EF%BC%9A%E6%8A%AB%E5%A4%B4%E5%A3%AB%E5%92%8C%E7%8C%AB%E7%8E%8B/%E7%94%B2%E5%A3%B3%E8%99%ABBeatles-Love.Me.Do-_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                                您的浏览器无法播放此视频，请在底部下载文件。
+                                            </video>
+                                    </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                            
+                <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3 class="panel-title text-center"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> 粤剧</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                        <div class="wrapper-vid">
+                                                <h5>粤剧-楼台会（一）<span> - 彭炽权、倪惠英</span></h5>
+                                                <video width="350" height="80" controls>
+                                                        <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E7%B2%A4%E5%89%A7/%E7%B2%A4%E5%89%A7_%E7%B2%A4%E6%9B%B2-%E6%A5%BC%E5%8F%B0%E4%BC%9A%E4%B8%80-%E5%BD%AD%E7%82%BD%E6%9D%83%E3%80%81%E5%80%AA%E6%83%A0%E8%8B%B1-_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                                </video>
+                                        </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                        <div class="wrapper-vid">
+                                                <h5>粤剧-香夭<span> - 张国荣，汪明荃</span></h5>
+                                                <video width="350" height="80" controls>
+                                                        <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E7%B2%A4%E5%89%A7/%E5%BC%A0%E5%9B%BD%E8%8D%A3%EF%BC%8C%E6%B1%AA%E6%98%8E%E8%8D%83%E2%80%94%E2%80%94%E3%80%8A%E9%A6%99%E5%A4%AD%E3%80%8B%E6%B8%85%E6%99%B0%E7%89%88%EF%BC%8C%E7%BA%AA%E5%BF%B5%E7%B2%A4%E6%9B%B2%E5%90%8D%E5%AE%B6%E4%BB%BB%E5%89%91%E8%BE%89%E5%A5%B3%E5%A3%AB%E9%80%9D%E4%B8%96%E5%8D%81%E5%91%A8%E5%B9%B4-_%E9%AB%98%E6%B8%85.mp4" type="video/mp4">
+                                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                                </video>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+
+            <!--下载全部文件按钮-->
+            <button id="btn2" type="button" class="btn btn-success center-block" >
+                下载全部文件
+            </button>
+        </div>
+
+    </div>
+
+
+
+
+    <div id="A4" class="object">
+
+        <div id="wrapper-A4" class="text-part-A5">
+
+            <div id="line1-A4"></div>
+            <div id="line2-A4"></div>
+
+            <ul>
+                <li>
+                    <div id="A4-nextpage-1"><a href="pop-music-01.html">&#171;&nbsp;&nbsp;上一页</a></div>
+                </li>
+                <li>
+                    <div id="A4-nextpage-2"><a href="pop-music-02-1.html">下一页&nbsp;&nbsp;&#187;</a></div>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!--
+	作者：offline
+	时间：2018-12-20
+	描述：A4a->A6注释掉了
+-->
+
+    <!--
+<div id="A4a" class="object">
+
+	<div id="wrapper-A4a" class="wow bounceInRight" data-wow-offset="10">
+    	
+    <div id="A4a-title-1">Leave us a Comment<br><span style="color:#CCC;">Your email address will not be published. Required fields are marked with *</span></div>  
+        
+    </div>
+
+</div>
+
+
+<div id="A4b" class="object">
+
+	<div id="wrapper-A4b">
+    
+    	<div id = "conteneur">
+	
+ 			<form id="contact" method="post" action="#">
+	 				<div id="er-message"></div>
+    			<fieldset>
+					<p><input type="text" id="nom" name="nom" tabindex="1" placeholder="Name*"/></p>
+					<p><input type="text" id="email" name="email" tabindex="2" placeholder="Email*"/></p>
+					<p><input type="text" id="objet" name="objet" tabindex="3" placeholder="Website"/></p>
+					<p><textarea id="message" name="message" maxlength="500" placeholder="Comment" tabindex="4" cols="30" rows="8"></textarea></p>
+				</fieldset>
+ 
+				<div style="text-align:center;"><input type="submit" name="envoi" value="Send" /></div>
+  			</form>
+    	</div>
+        
+    </div>
+
+</div>
+
+-->
+
+    <!-- PART 5 - SUB MENU AND SHORTCUTS -->
+    <!--
+<div id="A5"> 
+ 
+	<div id="wrapper-A5">
+    
+        <div id="wrapper-part-left" class="text-part-A5">
+        	<div id="A5-left" class="wow flipInX" data-wow-offset="10">
+    			<div id="left-text-post"><strong>Our recent post</strong></div>
+            	<div id="left-line-post"></div>
+            	<div id="left-line2-post"></div>
+			<ul>	
+                <li><div id="left-text-post-1"><strong><a href="spore-post1.html">Post a youtube video</a></strong></div></li>
+				<li><div id="left-text-post-2"><strong><a href="spore-post2.html">Post an animated image</a></strong></div></li>
+				<li><div id="left-text-post-3"><strong><a href="spore-post5.html">Post featured image</a></strong></div></li>
+				<li><div id="left-text-post-4"><strong><a href="spore-post3.html">Auto-resized image</a></strong></div></li>
+        	</ul>
+            </div>
+        </div>
+        
+        <div id="wrapper-part-mid" class="text-part-A5">
+        	<div id="A5-middle" class="wow flipInX" data-wow-offset="10" data-wow-delay="0.2s">
+    			<div id="mid-text-post"><strong>Categories</strong></div>
+            	<div id="mid-line-post"></div>
+            	<div id="mid-line2-post"></div>
+			<ul>	
+                <li><div id="mid-text-post-1"><strong><a href="spore-cat-video.html">Video</a></strong></div></li>
+				<li><div id="mid-text-post-2"><strong><a href="spore-cat-hotpost.html">Hot articles</a></strong></div></li>
+				<li><div id="mid-text-post-3"><strong><a href="spore-cat-image.html">Image</a></strong></div></li>
+        	</ul>
+            </div>
+        </div>
+        
+        <div id="wrapper-part-right" class="text-part-A5">
+        	<div id="A5-right" class="wow flipInX" data-wow-offset="10" data-wow-delay="0.4s">
+    			<div id="right-text-post"><strong>Why will you chose my blog theme ?</strong></div>
+            	<div id="right-line-post"></div>
+            	<div id="right-line2-post"></div>
+			<ul>	
+                <li><div id="right-text-post-1"><strong><a href="">RWD - Responsive Web design</a></strong></div></li>
+				<li><div id="right-text-post-2"><strong><a href="#">New javascript effect and animations</a></strong></div></li>
+				<li><div id="right-text-post-3"><strong><a href="#">Extensible bloc adapted</a></strong></div></li>
+				<li><div id="right-text-post-4"><strong><a href="#">No need to modify the code</a></strong></div></li>
+           </ul>
+           </div>
+        </div>
+        
+    <div class="A5-calage"></div>
+	</div>
+    
+</div>
+
+
+
+<div id="A5b"> 
+ 
+	<div id="wrapper-A5b">
+    
+        <div id="wrapper-A5b-part-left">
+        	<div id="A5b-left" class="wow flipInX" data-wow-offset="10">
+    			<div id="left-A5b-text-post">14</div>
+            	<div id="left-A5b-line-post"></div>
+            	<div id="left-A5b-line2-post"></div>
+				<div id="left-A5b-text-post-1"><strong>Posts</strong></div>
+        	</div>
+        </div>
+        
+        <div id="wrapper-A5b-part-mid">
+        	<div id="A5b-middle" class="wow flipInX" data-wow-offset="10" data-wow-delay="0.2s">
+    			<div id="mid-A5b-text-post">235</div>
+            	<div id="mid-A5b-line-post"></div>
+            	<div id="mid-A5b-line2-post"></div>
+				<div id="mid-A5b-text-post-1"><strong>Likes</strong></div>
+        	</div>
+        </div>
+        
+        <div id="wrapper-A5b-part-right">
+        	<div id="A5b-right" class="wow flipInX" data-wow-offset="10" data-wow-delay="0.4s">
+    			<div id="right-A5b-text-post">6509</div>
+            	<div id="right-A5b-line-post"></div>
+            	<div id="right-A5b-line2-post"></div>
+				<div id="right-A5b-text-post-1"><strong>Views</strong></div>
+           </div>
+        </div>
+        
+    <div class="A5b-calage"></div>
+	</div>
+    
+</div>
+
+
+<div id="A6">
+
+<div id="wrapper-social" class="wow bounceInLeft" data-wow-offset="10">
+    
+    	<div id="main-behance">
+    		<div id="cadre-behance" class="object">
+        		<div id="behance" class="object">E</div>
+    		</div>
+        </div>
+        
+        <div id="main-dribbble">
+    		<div id="cadre-dribbble" class="object">
+      	  		<div id="dribbble" class="object">D</div>
+    		</div>
+        </div>
+
+		<div id="main-facebook">
+    		<div id="cadre-facebook" class="object">
+	        	<div id="facebook" class="object">F</div>
+        	</div>
+        </div>
+ 
+		<div id="main-google">
+    		<div id="cadre-google" class="object">
+        		<div id="google" class="object">G</div>
+        	</div>
+        </div>
+        
+        <div id="main-linked">
+    		<div id="cadre-linked" class="object">
+        		<div id="linked" class="object">I</div>
+        	</div>
+        </div>
+        
+    </div>
+</div>
+
+-->
+
+
+    <div id="A7">
+
+        <div id="wrapper-A7">
+            <div id="line-A7"></div>
+            <div id="copyright"><strong>Copyright &copy; 2018. 本站资源仅供教学使用，不得商用。 </strong></div>
+        </div>
+
+    </div>
+
+    <!--SCRIPT-->
+    <script src="JS/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="JS/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="JS/jquery.localScroll.min.js"></script>
+    <script type="text/javascript" src="JS/jquery-animate-css-rotate-scale.js"></script>
+    <script type="text/javascript" src="JS/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    <script type="text/javascript" src="JS/fastclick.js"></script>
+    <script type='application/javascript'>
+        window.addEventListener('load', function() {
+            new FastClick(document.body);
+        }, false);
+    </script>
+
+    <script type="text/javascript" src="JS/music-content.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+
+    <script>
+        //视频播放自动全屏
+        var videos = document.getElementsByTagName('video');
+
+        for (let i = 0; i < videos.length; i++) {
+            const element = videos[i];
+            element.onplay = function () {
+                //W3C
+            if (element.requestFullscreen) {
+                element.requestFullscreen();
+            }
+            //FireFox
+            else if (element.mozRequestFullScreen) {
+                element.mozRequestFullScreen();
+            }
+            //Chrome等
+            else if (element.webkitRequestFullScreen) {
+                element.webkitRequestFullScreen();
+            }
+            //IE11
+            else if (element.msRequestFullscreen) {
+                element.msRequestFullscreen();
+            }
+            }
+        }
+    </script>
+    <script>
+        //----------------------------下载全部文件-------------------------------
+        var $eleBtn2 = $("#btn2");
+
+        $eleBtn2.click(function() {
+            var $eleForm = $("<form method='get'></form>");
+
+            $eleForm.attr("action", "http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E6%B5%81%E8%A1%8C%E9%9F%B3%E4%B9%90%E8%B5%8F%E6%9E%90/%E5%8E%8B%E7%BC%A9%E5%8C%85/%E5%8D%95%E5%85%832.rar");
+
+            $(document.body).append($eleForm);
+
+            //提交表单，实现下载
+            $eleForm.submit();
+        });
+    </script>
+</body>
+
+</html>

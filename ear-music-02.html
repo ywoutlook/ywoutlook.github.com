@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>音乐欣赏</title>
+
+    <!-- Behavioral Meta Data -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="郑燕梅 流行音乐赏析 浙江理工大学">
+    <meta name="author" content="ywang_perfect@163.com">
+    <link rel="icon" type="image/png" href="IMG/small-logo-01.png" />
+    <link href="CSS/spore-font.css" rel="stylesheet" />
+    <link href="CSS/animate.css" rel="stylesheet" />
+    <link href="CSS/spore-animate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="CSS/music-content.css" type="text/css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/APlayer.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/basic.css" />
+    <style>
+        .container-fluid {
+            margin-top: 20px;
+        }
+        
+        .wrapper-vid {
+            width: 350px;
+            height: 110px;
+            margin: 20px auto;
+            border-radius: 5px;
+            background: #FBFBFB;
+            text-align: center;
+            padding-top: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12)
+        }
+        
+        .wrapper-vid h5 span {
+            font-size: 12px;
+        }
+        
+        @media (max-width: 400px) {
+            .mus-player {
+                width: 300px;
+            }
+            .wrapper-vid {
+                width: 290px;
+            }
+            .wrapper-vid video {
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MENU TAB -->
+    <div id="main-wrapper-menu">
+        <div id="wrapper-cross"></div>
+        <div id="wrapper-menu">
+
+            <div class="recent-post text-part-menutab">
+                <ul>
+                    <li>
+                        <div id="recent-post-title">Our recent post</div>
+                    </li>
+                    <li>
+                        <div id="recent-post-1"><a href="spore-post1.html">Post a youtube video</a></div>
+                    </li>
+                    <li>
+                        <div id="recent-post-2"><a href="spore-post2.html">Post an animated image</a></div>
+                    </li>
+                    <li>
+                        <div id="recent-post-3"><a href="spore-post5.html">Post featured image</a></div>
+                    </li>
+                    <li>
+                        <div id="recent-post-4"><a href="spore-post3.html">Auto-resized image</a></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="category-post text-part-menutab">
+                <div id="line-category-post"></div>
+                <ul>
+                    <li>
+                        <div id="category-post-title">Categories post</div>
+                    </li>
+                    <li>
+                        <div id="category-post-1"><a href="spore-cat-video.html">Video articles</a></div>
+                    </li>
+                    <li>
+                        <div id="category-post-2"><a href="spore-cat-hotpost.html">Hot articles</a></div>
+                    </li>
+                    <li>
+                        <div id="category-post-3"><a href="spore-cat-image.html">Images</a></div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- BOUTON MENU TAB -->
+    <!--
+<div id="wrapper-plus" class="object"></div>
+-->
+    <!-- HEADER -->
+
+    <div id="A1-main">
+
+        <div id="wrapper-logo">
+            <a href="index.html">
+                <div id="logo" class="shadow object"></div>
+            </a>
+        </div>
+
+        <div id="A1">
+
+            <div class="blank"></div>
+            <div id="A0"></div>
+            <div id="A0-2"></div>
+            <div id="trame"></div>
+
+        </div>
+
+    </div>
+
+    <div >
+        <div id="content-wrapper" class="container-fluid">
+
+            <div class="panel panel-success">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-center"><span class="glyphicon glyphicon-music" aria-hidden="true"></span> 课2</h3>
+                </div>
+
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="wrapper-vid">
+                                <h5>卡门（马头琴）<span> - 东方神骏</span></h5>
+                                <video width="350" height="80" controls >
+                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E9%9F%B3%E4%B9%90%E6%AC%A3%E8%B5%8F/%E8%AF%BE2/%E4%B8%9C%E6%96%B9%E7%A5%9E%E9%AA%8F%20%E9%A9%AC%E5%A4%B4%E7%90%B4%E3%80%8A%E5%8D%A1%E9%97%A8%E3%80%8B_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                        </video>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="wrapper-vid">
+                                <h5>拉德斯基进行曲（马头琴）<span> - 东方神骏</span></h5>
+                                <video width="350" height="80" controls >
+                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E9%9F%B3%E4%B9%90%E6%AC%A3%E8%B5%8F/%E8%AF%BE2/%E4%B8%9C%E6%96%B9%E7%A5%9E%E9%AA%8F%20%E9%A9%AC%E5%A4%B4%E7%90%B4%E3%80%8A%E6%8B%89%E5%BE%B7%E6%96%AF%E5%9F%BA%E8%BF%9B%E8%A1%8C%E6%9B%B2%E3%80%8B_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                        </video>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="wrapper-vid">
+                                <h5>狂飙（马头琴）<span> - 东方神骏</span></h5>
+                                <video width="350" height="80" controls >
+                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E9%9F%B3%E4%B9%90%E6%AC%A3%E8%B5%8F/%E8%AF%BE2/%E4%B8%9C%E6%96%B9%E7%A5%9E%E9%AA%8F%20%E9%A9%AC%E5%A4%B4%E7%90%B4%E3%80%8A%E6%8B%89%E5%BE%B7%E6%96%AF%E5%9F%BA%E8%BF%9B%E8%A1%8C%E6%9B%B2%E3%80%8B_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                        </video>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="wrapper-vid">
+                                <h5>二泉映月<span> - 彭丽媛</span></h5>
+                                <video width="350" height="80" controls >
+                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E9%9F%B3%E4%B9%90%E6%AC%A3%E8%B5%8F/%E8%AF%BE2/%E4%BA%8C%E6%B3%89%E6%98%A0%E6%9C%88%EF%BC%88%E5%BD%AD%E4%B8%BD%E5%AA%9B%E6%BC%94%E5%94%B1%EF%BC%89%20-%2056%E7%BD%91%E8%A7%86%E9%A2%91.mp4" type="video/mp4">
+                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                        </video>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="wrapper-vid">
+                                <h5>二泉映月<span> - 邓建栋</span></h5>
+                                <video width="350" height="80" controls >
+                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E9%9F%B3%E4%B9%90%E6%AC%A3%E8%B5%8F/%E8%AF%BE2/%E5%8D%8E%E5%BD%A6%E9%92%A7%EF%BC%88%E9%98%BF%E7%82%B3%EF%BC%89%EF%BC%9A%E4%BA%8C%E6%B3%89%E6%98%A0%E6%9C%88%20%E4%BA%8C%E8%83%A1%E7%8B%AC%E5%A5%8F%20%E9%82%93%E5%BB%BA%E6%A0%8B_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                        </video>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="wrapper-vid">
+                                <h5>梁祝<span> - 吕思清</span></h5>
+                                <video width="350" height="80" controls >
+                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E9%9F%B3%E4%B9%90%E6%AC%A3%E8%B5%8F/%E8%AF%BE2/%E5%90%95%E6%80%9D%E6%B8%85-%E5%B0%8F%E6%8F%90%E7%90%B4%E5%8D%8F%E5%A5%8F%E6%9B%B2%E3%80%8A%E6%A2%81%E7%A5%9D%E3%80%8B%E7%BB%8F%E5%85%B8%E7%89%88_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                        </video>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="wrapper-vid">
+                                <h5>空山鸟语<span> - 宋飞</span></h5>
+                                <video width="350" height="80" controls >
+                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E9%9F%B3%E4%B9%90%E6%AC%A3%E8%B5%8F/%E8%AF%BE2/%E5%AE%8B%E9%A3%9E%E4%BA%8C%E8%83%A1%E7%8B%AC%E5%A5%8F%E3%80%8A%E7%A9%BA%E5%B1%B1%E9%B8%9F%E8%AF%AD%E3%80%8B_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                        </video>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="wrapper-vid">
+                                <h5>春江花月夜（金色大厅）<span></span></h5>
+                                <video width="350" height="80" controls >
+                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E9%9F%B3%E4%B9%90%E6%AC%A3%E8%B5%8F/%E8%AF%BE2/%E6%98%A5%E6%B1%9F%E8%8A%B1%E6%9C%88%E5%A4%9C%5B%E9%87%91%E8%89%B2%E5%A4%A7%E5%8E%85%E6%BC%94%E5%87%BA%E8%A7%86%E9%A2%91%5D%20-%2056%E7%BD%91%E8%A7%86%E9%A2%91.mp4" type="video/mp4">
+                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                        </video>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="wrapper-vid">
+                                <h5>梁祝<span> - 范瑞娟，袁雪芬</span></h5>
+                                <video width="350" height="80" controls >
+                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E9%9F%B3%E4%B9%90%E6%AC%A3%E8%B5%8F/%E8%AF%BE2/%E8%B6%8A%E5%89%A7%E6%A2%81%E7%A5%9D%E8%8C%83%E7%91%9E%E5%A8%9F%E8%A2%81%E9%9B%AA%E8%8A%AC.mp4" type="video/mp4">
+                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                        </video>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="wrapper-vid">
+                                <h5>万马奔腾（马头琴）<span> - 齐宝力高</span></h5>
+                                <video width="350" height="80" controls >
+                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E9%9F%B3%E4%B9%90%E6%AC%A3%E8%B5%8F/%E8%AF%BE2/%E9%BD%90%E5%AE%9D%E5%8A%9B%E9%AB%98%20%E9%A9%AC%E5%A4%B4%E7%90%B4--%E3%80%8A%E4%B8%87%E9%A9%AC%E5%A5%94%E8%85%BE%E3%80%8B_%E5%BC%A6%E6%83%85%E9%9B%85%E8%87%B4_%E6%96%B0%E6%B5%AA%E6%92%AD%E5%AE%A22.mp4" type="video/mp4">
+                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                        </video>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="wrapper-vid">
+                                <h5>万马奔腾（马头琴）<span> - 齐宝力高</span></h5>
+                                <video width="350" height="80" controls >
+                                                    <source src="http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E9%9F%B3%E4%B9%90%E6%AC%A3%E8%B5%8F/%E8%AF%BE2/%E9%BD%90%E5%AE%9D%E5%8A%9B%E9%AB%98%20%E9%A9%AC%E5%A4%B4%E7%90%B4%E3%80%8A%E4%B8%87%E9%A9%AC%E5%A5%94%E8%85%BE%E3%80%8B_%E6%A0%87%E6%B8%85.mp4" type="video/mp4">
+                                                    您的浏览器无法播放此视频，请在底部下载文件。
+                                        </video>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!--下载全部文件按钮-->
+            <button id="btn2" type="button" class="btn btn-success center-block" >
+                下载全部文件
+            </button>
+        </div>
+
+    </div>
+
+
+
+
+    <div id="A4" class="object">
+
+        <div id="wrapper-A4" class="text-part-A5">
+
+            <div id="line1-A4"></div>
+            <div id="line2-A4"></div>
+
+            <ul>
+                <li>
+                    <div id="A4-nextpage-1"><a href="ear-music-01.html">&#171;&nbsp;&nbsp;上一页</a></div>
+                </li>
+                <li>
+                    <div id="A4-nextpage-2"><a href="ear-music-03.html">下一页&nbsp;&nbsp;&#187;</a></div>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!--
+	作者：offline
+	时间：2018-12-20
+	描述：A4a->A6注释掉了
+-->
+
+    <!--
+<div id="A4a" class="object">
+
+	<div id="wrapper-A4a" class="wow bounceInRight" data-wow-offset="10">
+    	
+    <div id="A4a-title-1">Leave us a Comment<br><span style="color:#CCC;">Your email address will not be published. Required fields are marked with *</span></div>  
+        
+    </div>
+
+</div>
+
+
+<div id="A4b" class="object">
+
+	<div id="wrapper-A4b">
+    
+    	<div id = "conteneur">
+	
+ 			<form id="contact" method="post" action="#">
+	 				<div id="er-message"></div>
+    			<fieldset>
+					<p><input type="text" id="nom" name="nom" tabindex="1" placeholder="Name*"/></p>
+					<p><input type="text" id="email" name="email" tabindex="2" placeholder="Email*"/></p>
+					<p><input type="text" id="objet" name="objet" tabindex="3" placeholder="Website"/></p>
+					<p><textarea id="message" name="message" maxlength="500" placeholder="Comment" tabindex="4" cols="30" rows="8"></textarea></p>
+				</fieldset>
+ 
+				<div style="text-align:center;"><input type="submit" name="envoi" value="Send" /></div>
+  			</form>
+    	</div>
+        
+    </div>
+
+</div>
+
+-->
+
+    <!-- PART 5 - SUB MENU AND SHORTCUTS -->
+    <!--
+<div id="A5"> 
+ 
+	<div id="wrapper-A5">
+    
+        <div id="wrapper-part-left" class="text-part-A5">
+        	<div id="A5-left" class="wow flipInX" data-wow-offset="10">
+    			<div id="left-text-post"><strong>Our recent post</strong></div>
+            	<div id="left-line-post"></div>
+            	<div id="left-line2-post"></div>
+			<ul>	
+                <li><div id="left-text-post-1"><strong><a href="spore-post1.html">Post a youtube video</a></strong></div></li>
+				<li><div id="left-text-post-2"><strong><a href="spore-post2.html">Post an animated image</a></strong></div></li>
+				<li><div id="left-text-post-3"><strong><a href="spore-post5.html">Post featured image</a></strong></div></li>
+				<li><div id="left-text-post-4"><strong><a href="spore-post3.html">Auto-resized image</a></strong></div></li>
+        	</ul>
+            </div>
+        </div>
+        
+        <div id="wrapper-part-mid" class="text-part-A5">
+        	<div id="A5-middle" class="wow flipInX" data-wow-offset="10" data-wow-delay="0.2s">
+    			<div id="mid-text-post"><strong>Categories</strong></div>
+            	<div id="mid-line-post"></div>
+            	<div id="mid-line2-post"></div>
+			<ul>	
+                <li><div id="mid-text-post-1"><strong><a href="spore-cat-video.html">Video</a></strong></div></li>
+				<li><div id="mid-text-post-2"><strong><a href="spore-cat-hotpost.html">Hot articles</a></strong></div></li>
+				<li><div id="mid-text-post-3"><strong><a href="spore-cat-image.html">Image</a></strong></div></li>
+        	</ul>
+            </div>
+        </div>
+        
+        <div id="wrapper-part-right" class="text-part-A5">
+        	<div id="A5-right" class="wow flipInX" data-wow-offset="10" data-wow-delay="0.4s">
+    			<div id="right-text-post"><strong>Why will you chose my blog theme ?</strong></div>
+            	<div id="right-line-post"></div>
+            	<div id="right-line2-post"></div>
+			<ul>	
+                <li><div id="right-text-post-1"><strong><a href="">RWD - Responsive Web design</a></strong></div></li>
+				<li><div id="right-text-post-2"><strong><a href="#">New javascript effect and animations</a></strong></div></li>
+				<li><div id="right-text-post-3"><strong><a href="#">Extensible bloc adapted</a></strong></div></li>
+				<li><div id="right-text-post-4"><strong><a href="#">No need to modify the code</a></strong></div></li>
+           </ul>
+           </div>
+        </div>
+        
+    <div class="A5-calage"></div>
+	</div>
+    
+</div>
+
+
+
+<div id="A5b"> 
+ 
+	<div id="wrapper-A5b">
+    
+        <div id="wrapper-A5b-part-left">
+        	<div id="A5b-left" class="wow flipInX" data-wow-offset="10">
+    			<div id="left-A5b-text-post">14</div>
+            	<div id="left-A5b-line-post"></div>
+            	<div id="left-A5b-line2-post"></div>
+				<div id="left-A5b-text-post-1"><strong>Posts</strong></div>
+        	</div>
+        </div>
+        
+        <div id="wrapper-A5b-part-mid">
+        	<div id="A5b-middle" class="wow flipInX" data-wow-offset="10" data-wow-delay="0.2s">
+    			<div id="mid-A5b-text-post">235</div>
+            	<div id="mid-A5b-line-post"></div>
+            	<div id="mid-A5b-line2-post"></div>
+				<div id="mid-A5b-text-post-1"><strong>Likes</strong></div>
+        	</div>
+        </div>
+        
+        <div id="wrapper-A5b-part-right">
+        	<div id="A5b-right" class="wow flipInX" data-wow-offset="10" data-wow-delay="0.4s">
+    			<div id="right-A5b-text-post">6509</div>
+            	<div id="right-A5b-line-post"></div>
+            	<div id="right-A5b-line2-post"></div>
+				<div id="right-A5b-text-post-1"><strong>Views</strong></div>
+           </div>
+        </div>
+        
+    <div class="A5b-calage"></div>
+	</div>
+    
+</div>
+
+
+<div id="A6">
+
+<div id="wrapper-social" class="wow bounceInLeft" data-wow-offset="10">
+    
+    	<div id="main-behance">
+    		<div id="cadre-behance" class="object">
+        		<div id="behance" class="object">E</div>
+    		</div>
+        </div>
+        
+        <div id="main-dribbble">
+    		<div id="cadre-dribbble" class="object">
+      	  		<div id="dribbble" class="object">D</div>
+    		</div>
+        </div>
+
+		<div id="main-facebook">
+    		<div id="cadre-facebook" class="object">
+	        	<div id="facebook" class="object">F</div>
+        	</div>
+        </div>
+ 
+		<div id="main-google">
+    		<div id="cadre-google" class="object">
+        		<div id="google" class="object">G</div>
+        	</div>
+        </div>
+        
+        <div id="main-linked">
+    		<div id="cadre-linked" class="object">
+        		<div id="linked" class="object">I</div>
+        	</div>
+        </div>
+        
+    </div>
+</div>
+
+-->
+
+
+    <div id="A7">
+
+        <div id="wrapper-A7">
+            <div id="line-A7"></div>
+            <div id="copyright"><strong>Copyright &copy; 2018. 本站资源仅供教学使用，不得商用。 </strong></div>
+        </div>
+
+    </div>
+
+    <!--SCRIPT-->
+    <script src="JS/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="JS/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="JS/jquery.localScroll.min.js"></script>
+    <script type="text/javascript" src="JS/jquery-animate-css-rotate-scale.js"></script>
+    <script type="text/javascript" src="JS/wow.min.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+    <script type="text/javascript" src="JS/fastclick.js"></script>
+    <script type='application/javascript'>
+        window.addEventListener('load', function() {
+            new FastClick(document.body);
+        }, false);
+    </script>
+
+    <script type="text/javascript" src="JS/music-content.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+
+    <script>
+        //视频播放自动全屏
+        var videos = document.getElementsByTagName('video');
+
+        for (let i = 0; i < videos.length; i++) {
+            const element = videos[i];
+            element.onplay = function () {
+                //W3C
+            if (element.requestFullscreen) {
+                element.requestFullscreen();
+            }
+            //FireFox
+            else if (element.mozRequestFullScreen) {
+                element.mozRequestFullScreen();
+            }
+            //Chrome等
+            else if (element.webkitRequestFullScreen) {
+                element.webkitRequestFullScreen();
+            }
+            //IE11
+            else if (element.msRequestFullscreen) {
+                element.msRequestFullscreen();
+            }
+            }
+        }
+        
+    </script>
+    <script>
+        //----------------------------下载全部文件-------------------------------
+        var $eleBtn2 = $("#btn2");
+
+        $eleBtn2.click(function() {
+            var $eleForm = $("<form method='get'></form>");
+
+            $eleForm.attr("action", "http://ymzheng-files.oss-cn-hangzhou.aliyuncs.com/%E9%9F%B3%E4%B9%90%E6%AC%A3%E8%B5%8F/%E5%8E%8B%E7%BC%A9%E5%8C%85/%E8%AF%BE2.rar");
+
+            $(document.body).append($eleForm);
+
+            //提交表单，实现下载
+            $eleForm.submit();
+        });
+    </script>
+</body>
+
+</html>
